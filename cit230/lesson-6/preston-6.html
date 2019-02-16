@@ -39,9 +39,11 @@
                 <h2>More about Preston:</h2>
                 <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maxime dicta ipsam nemo aliquam, enim vitae voluptatum esse deleniti non omnis aspernatur repudiandae debitis ducimus inventore voluptatibus quas ullam porro.</p>
                 <picture>
-                    <source media="(max-width: 415px)" srcset="images/small.jpg"/>
-                    <source media="(min-width: 720px)" srcset="images/large.jpg"/>
-                    <img src="images/small.jpg" alt="picture" class="center">
+                    <img src="images/small.jpg" alt="picture" class="center"
+                        srcset="images/small.jpg 900w,
+                                images/large.jpg 1800w,
+                                "                    
+                        >
                 </picture>
             </article>
         <div id="map">
