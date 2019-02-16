@@ -6,10 +6,12 @@
         background-position: center; 
         background-size: 290%;
     }
+
     /* Header */
     header {
         height: 200px;
     }
+
     header .logo {
         position: relative;
         padding-top: 16px;
@@ -17,14 +19,17 @@
         width: 165px;
         float: left;
     }
+
     header #motto {
         padding-top: 60px;
         font-size: 80%;
     }
+
     /* Navigation D */
     nav li{
         float: left;
     }
+
     /* Content D*/
     main{
         padding-top: 2%;
@@ -33,11 +38,13 @@
         background-color: white;
         /* opacity: 0.8; */
     }
+
     #prestonmap {
         height: 400px;
         width: 100%;
         border: 0;
     }
+    
     footer {
         padding-bottom: 5%;
     }
