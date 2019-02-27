@@ -1,0 +1,154 @@
+body {
+    background-color:white;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background-color: #dadcdf;
+    height: 125px;
+}
+
+header .logo {
+    position: relative;
+    padding-top: 14px;
+    margin-left: 8%;
+    width: 95px;
+    float: left;
+}
+
+header #motto {
+    text-align: center;
+    color: #2D4059;
+    font-size: 60%;
+    font-weight: bold;
+    padding-top: 35px;
+}
+
+/* Navigation */
+button {
+    background-color: #2D4059;
+    width: 100%;
+    border-style: none;
+    color: white;
+    padding: 2%;
+    outline: none;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight: bold;
+    background-color: #2D4059;
+}
+
+nav li{
+    float: none;
+}
+
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration:none;
+}
+
+.active {
+    background-color: #44617f;
+}
+
+nav li a:hover {
+    background-color: lightslategray;
+}
+
+/* Content */
+
+.weatherwidget-io {
+    width: 98%;
+}
+
+@media screen and (max-width: 415px){
+    #forecast {
+        display: none;
+    }
+    
+    /*--GALLERY--*/
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        border: 1px solid #ccc;
+        max-width: 85%;
+    }
+
+    .gallery img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .desc{
+        padding: 1rem;
+        text-align: center;
+}
+}
+
+#forecast {
+    margin-left: 13px;
+}
+
+#temps{
+    margin-left: 13px;
+}
+
+h1{ 
+    text-align: center;
+}
+
+#about{
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1000px;
+    margin-left: 13px;
+}
+
+#article1 {
+    margin-left: 12px;
+    margin-right:5px;
+}
+
+.center {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+#prestonmap {
+    margin-top: 5%;
+    width: 98%;
+}
+
+/* Footer */
+footer a{
+    font-style: normal;
+    color: black;
+}
+
+/*div{
+    height: 100%;
+    width: 100%;
+}
+*/
+footer {
+    position: absolute;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 19%;
+    background: #dadcdf;
+    text-indent: 12px;
+    font-size: 80%;
+    font-weight: bold;
+}

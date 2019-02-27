@@ -20,7 +20,8 @@ h1 {
 h2 {
     font-size: 1.5rem;
     text-align: center;
-    border-bottom: 1px solid #000000;
+    border-bottom: 3px solid #000000;
+    float: top;
 }
 
 header, main, footer {
@@ -38,9 +39,9 @@ header, footer, footer a {
 header img {
     width: 200px;
     height: auto;
-    float: right;
-    margin-top: 25px;
-    border: 12px solid #000000;
+    float: bottom;
+    margin-top: none;
+    border: 5px solid #d9d9d9;
     border-radius: 50%;
 }
 

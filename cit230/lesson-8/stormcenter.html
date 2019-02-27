@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--updated 2/26-->
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Travel Temps</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/stormcenter.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+</head>
+
+<body onload="getCurrentDate()">
+    <header>
+        <img src="images/logo.png" alt="logo" class="logo">
+        <div id="motto">
+            <h1>Your first stop for local road conditions</h1>
+        </div>
+    </header>
+    <nav>
+        <button onClick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">HOME</a></li>
+            <li><a href="./preston-8.html">PRESTON</a></li>
+            <li><a href="#">SODA SPRINGS</a></li>
+            <li><a href="#">FISH HAVEN</a></li>
+            <li><a class="active" href="./stormcenter.html">STORM CENTER</a></li>
+            <li><a href="./gallery-8.html">GALLERY</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Storm Center</h1>
+        <h2>Please fill out the following form: </h2>
+        <form action="thanks.html" method="get">
+            <div>
+                <label for="fullName">Full Name: </label>
+                <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="user@domain.com">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number: </label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="555-123-4567" required>
+            </div>
+            <div>
+                <label for="zipCode">Zip Code: </label>
+                <input type="number" id="zipCode" name="zipCode" placeholder="12345">
+            </div>
+            <div>
+                <label for="stormDate">Storm Date: </label>
+                <input type="date" id="stormDate" name="stormDate" placeholder="mm/dd/yy" required>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <br>
+    </main>
+    <footer onload="getCurrentDate()">
+        <h4>Contact:</h4>
+        <p id="telephone">Telephone: 435-650-1192</p>
+        <p>Email: <a href="mailto:tay18008@byui.edu">tay18008@byui.edu</a></p>
+        <p id="terms">Terms of Use</p>
+        <p>&copy; John Taylor - Idaho</p>
+        <p><span id='currentDate'></span></p>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+    </footer>
+</body>
+
+</html>
