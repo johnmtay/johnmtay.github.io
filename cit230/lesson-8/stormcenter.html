@@ -71,8 +71,9 @@
             </div>
             <div>
                 <label for="stormSeverity">Storm Severity:&nbsp;</label>
-                <input type="range" id="stormSeverity" name="stormSeverity" value="5" min="1" max="10" step="1" oninput="function()" onchange="function()">
-                <span id="somevalue">5</span><br>
+                <input type="range" id="stormSeverity" name="stormSeverity" value="5" min="1" max="10" step="1" 
+                oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                <span id="stormvalue">5</span><br>
             </div>
             <div>
                 <label for="stormRegion">Storm Region:&nbsp;</label>
@@ -108,6 +109,7 @@
         <p><span id='currentDate'></span></p>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/hamburger.js"></script>
+        <script src="scripts/stormseverity.js"></script>
     </footer>
 </body>
 
