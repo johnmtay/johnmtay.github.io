@@ -1,0 +1,73 @@
+h2{
+    text-align: center;
+    color: white;
+}
+section div{
+    color: white;
+    margin: 5%;
+}
+
+/*Small View*/
+@media screen and (max-width: 720px) {
+    .townContainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        border: 1px solid #ccc;
+        max-width: 80%;
+        background-color: #2D4059;
+    }
+
+    h2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainimages {
+        width: 100%;
+        height: 100%;
+    }
+
+    main p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+/*Larger View*/
+@media screen and (min-width: 711px) {
+
+    .mainimages {
+        width: 100%;
+    }
+
+    main p {
+        margin-left: 10%;
+        margin-right:10%;
+    }
+
+    #grid {
+        display: grid;
+    }
+
+    .townContainer{
+        margin: auto;
+        border: 1px solid #ccc;
+        max-width: 85%;
+        background-color: #2D4059;
+    }
+
+    #prestonContainer {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #sodaSpringsContainer {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #fishHavenContainer {
+        grid-column: 3;
+        grid-row: 1;
+    }
+}

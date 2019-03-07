@@ -1,0 +1,54 @@
+/* Tablet Displays */
+@media screen and (min-width: 416px) and (max-width: 719px){
+    /* Content */
+    /* GALLERY */
+    #photogallery{
+        display: grid;
+        grid-row-gap: 1rem;
+    }
+
+    div.gallery {
+        margin: auto;
+        border: 1px solid #ccc;
+        max-width: 80%;
+    }
+    #autumnwood {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #flowers {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #rainleaf {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #snowtree {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #lake {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #purple {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .gallery img{
+        width: 100%;
+    }
+
+    div.desc{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+}

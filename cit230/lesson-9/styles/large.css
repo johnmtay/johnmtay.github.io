@@ -1,0 +1,118 @@
+/* Desktop Displays*/
+@media screen and (min-width: 720px) {
+    body {
+        background-image: url(../images/clouds-cloudy-cold-167699.jpg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 290%;
+    }
+
+    /* Header */
+    header {
+        height: 200px;
+    }
+
+    header .logo {
+        position: relative;
+        padding-top: 16px;
+        margin-left: 8.5%;
+        width: 165px;
+        float: left;
+    }
+
+    header #motto {
+        padding-top: 60px;
+        font-size: 80%;
+    }
+
+    /* Navigation D */
+    button {
+        display: none;
+    }
+    nav li{
+        float: left;
+    }
+
+    /* Content D*/
+    main{
+        padding-top: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: white;
+        /* opacity: 0.8; */
+    }
+    /* GALLERY */
+    #photogallery{
+        display: grid;
+        grid-row-gap: 1rem;
+    }
+
+    div.gallery {
+        margin: auto;
+        border: 1px solid #ccc;
+        max-width: 80%;
+    }
+    #autumnwood {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #flowers {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #rainleaf {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    #snowtree {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #lake {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #purple {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .gallery img{
+        width: 100%;
+    }
+
+    .desc{
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .gallery :hover{
+        box-shadow: 5px 5px 40px 1px;
+    }
+    
+    .desc :hover {
+        box-shadow: none;
+    }
+    
+    #prestonmap {
+        height: 400px;
+        width: 100%;
+        border: 0;
+    }
+
+    footer {
+        padding-bottom: 10%;
+        bottom: 10;
+    }
+}
+@media screen and (max-width: 719px) {
+    nav ul.hide {
+    display: none;
+    }
+}
