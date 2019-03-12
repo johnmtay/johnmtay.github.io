@@ -8,8 +8,13 @@ section div{
     margin: 5%;
 }
 
+.containerText  {
+    text-align: center;
+}
+
 #prestonMotto, #sodaSpringsMotto, #fishHavenMotto {
     font-style: italic;
+
 }
 
 .townContainer {
@@ -25,6 +30,7 @@ section div{
         border: 1px solid #ccc;
         max-width: 80%;
         background-color: #2D4059;
+        justify-content: center;
     }
 
     h2 {
@@ -40,10 +46,11 @@ section div{
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
 }
 
 /*Larger View*/
-@media screen and (min-width: 711px) {
+@media screen and (min-width: 721px) {
 
     .mainimages {
         width: 100%;
@@ -64,6 +71,7 @@ section div{
         max-width: 85%;
         height: 100%;
         background-color: #2D4059;
+        text-align: center;
     }
 
     #prestonContainer {

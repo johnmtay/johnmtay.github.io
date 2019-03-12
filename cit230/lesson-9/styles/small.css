@@ -66,8 +66,21 @@ nav li a:hover {
 
 /* Content */
 
-.weatherwidget-io {
-    width: 98%;
+table {
+    width: 75%;
+    margin-left: 11%;
+    border-style: hidden;
+}
+
+tr{
+    border-style: none;
+}
+th, td{
+    background-color: #2D4059;
+    color: white;
+
+    text-align: center;
+    width: 10%;
 }
 
 @media screen and (max-width: 415px){
