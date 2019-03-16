@@ -124,6 +124,10 @@ th, td{
     margin-left: 13px;
 }
 
+#forecast th, #forecast td {
+    padding: 1%;
+}
+
 #temps{
     margin-left: 12px;
 }
