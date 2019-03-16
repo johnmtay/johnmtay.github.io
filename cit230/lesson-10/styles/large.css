@@ -1,5 +1,5 @@
 /* Desktop Displays*/
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 722px) {
     body {
         background-image: url(../images/clouds-cloudy-cold-167699.jpg);
         background-repeat: no-repeat;
@@ -111,7 +111,7 @@
         bottom: 10;
     }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 722px) {
     nav ul.hide {
     display: none;
     }

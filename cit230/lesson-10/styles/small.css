@@ -92,14 +92,11 @@ th, td{
     color: white;
 
     text-align: center;
-    width: 10%;
+    width: 11%;
 }
 
 @media screen and (max-width: 415px){
-    #forecast {
-        display: none;
-    }
-    
+   
     /*--GALLERY--*/
     .gallery{
         display: flex;
@@ -119,13 +116,23 @@ th, td{
         text-align: center;
     }
 }
-
-#summary, #forecast {
-    margin-left: 13px;
+/* Media Query for Forecast */
+@media screen and (max-width: 721px){
+    #forecast {
+        display: none;
+    }
 }
 
-#forecast th, #forecast td {
+#summary, #forecast {
+    margin-left: 12px;
+}
+
+#forecast th{
     padding: 1%;
+}
+#forecast td {
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 #temps{
