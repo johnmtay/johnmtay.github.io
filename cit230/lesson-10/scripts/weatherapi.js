@@ -7,7 +7,7 @@ weatherRequest.send();
 
 weatherRequest.onload = function() {
     var weatherData = weatherRequest.response;
-    console.log(weatherData);
+    //console.log(weatherData);
     // Weather Summary
     document.getElementById('current-temp').innerHTML = weatherData.main.temp + '&deg;';
     document.getElementById('condition').innerHTML = weatherData.weather[0].main;
@@ -28,7 +28,8 @@ forecastRequest.send();
 
 forecastRequest.onload = function() {
     var forecastData = forecastRequest.response;
-    console.log(forecastData);
+    //console.log(forecastData);
+
 // Day of Week
     var d = new Date();
     var weekday = new Array(7);
