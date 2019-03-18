@@ -14,12 +14,11 @@ weatherRequest.onload = function() {
     document.getElementById('humidity').innerHTML = weatherData.main.humidity + '&#37;';
     document.getElementById('windSpeed').innerHTML = weatherData.wind.speed + ' mph';
     // Weather Image
-    document.getElementById('icon').setAttribute("src", 'http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png');
+    document.getElementById('icon').setAttribute("src", 'https://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png');
  
 }
 // Forecast
 var apiForecastString = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=2e39eb574dc3bcc6984704dd02d355d2&units=imperial';
-
 var forecastRequest = new XMLHttpRequest();
 
 forecastRequest.open('GET', apiForecastString, true);
