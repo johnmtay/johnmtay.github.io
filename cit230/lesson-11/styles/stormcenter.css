@@ -1,0 +1,67 @@
+h2{
+    margin-left: 1.5rem;
+}
+form {
+    display: contents;
+    background-color: gray;
+}
+form div {
+    margin-left: 1.5rem;
+    padding-top: 1%;
+}
+
+label {
+    display: inline-block;
+    min-width: 9rem;
+}
+
+#inDanger {
+    padding-bottom: 1%;
+}
+
+textarea {
+    margin-top: 1%;
+    resize: none;
+}
+
+/*Small View*/
+@media screen and (max-width: 1023px) {
+    #storm {
+        display: none;
+    }
+}
+
+/*Larger View*/
+@media screen and (min-width: 720px) {
+    h2{
+        margin-left: 10%;
+    }
+    
+    form div {
+        margin-left: 10%;
+        padding-top: 1%;
+    }
+ 
+    #storm {
+        float: right;
+        width: 28%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 10%;
+    }
+
+    label {
+        display: inline-block;
+        min-width: 9rem;
+    }
+
+    main p {
+        margin-left: 2rem;
+    }
+}
+
+/* 4K Size*/
+@media screen and (min-width: 2260px) {
+    #storm {
+        display: none;
+    }

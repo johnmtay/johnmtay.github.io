@@ -4,7 +4,7 @@
         background-image: url(../images/clouds-cloudy-cold-167699.jpg);
         background-repeat: no-repeat;
         background-position: center; 
-        background-size: 290%;
+        background-size: 200rem;
     }
 
     /* Header */
@@ -34,6 +34,13 @@
     }
 
     /* Content D*/
+    .mainimage {
+        display: block;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     main{
         padding-top: 2%;
         margin-left: 10%;
@@ -100,7 +107,7 @@
         box-shadow: none;
     }
     
-    #prestonmap {
+    #googleMap {
         height: 400px;
         width: 100%;
         border: 0;

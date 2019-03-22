@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--updated 3/21-->
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Travel Temps</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+</head>
+
+<body onload="getCurrentDate()">
+    <header>
+        <img src="images/logo.png" alt="logo" class="logo">
+        <div id="motto">
+            <h1>Your first stop for local road conditions</h1>
+        </div>
+    </header>
+    <nav>
+        <button onClick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="./preston.html">PRESTON</a></li>
+            <li><a href="./sodasprings.html">SODA SPRINGS</a></li>
+            <li><a href="./fishhaven.html">FISH HAVEN</a></li>
+            <li><a href="./stormcenter.html">STORM CENTER</a></li>
+            <li><a href="./gallery.html">GALLERY</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to Travel Temps! </h1>
+        <article>
+            <p>Planning a trip in Idaho and need to know how the weather will be? We've got you covered! Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Nulla cupiditate deleniti eius officia odit eum
+                necessitatibus autem laboriosam id cum aliquam ea ratione dolores sed at, excepturi earum consequuntur
+                porro!</p>
+            <p>See what areas we serve:</p>
+            <br>
+        </article>
+        <div id="grid">
+            <section class="townContainer" id="prestonContainer">
+                <h2>Preston</h2>
+                <img src='./images/homepage/preston.jpeg' alt='preston' class='mainimages'></img>
+                <div>
+                    <span class='containerText' id='prestonMotto'> </span><br>
+                    <span class='containerText' id='prestonYearFounded'>Year founded: </span><br>
+                    <span class='containerText' id='prestonPopulation'>Population: </span><br>
+                    <span class='containerText' id='prestonRainFall'>Annual Rain Fall:</span><br>
+                </div>
+            </section>
+            <br>
+            <section class="townContainer" id='sodaSpringsContainer'>
+                <h2>Soda Springs</h2>
+                <img src='./images/homepage/sodasprings.jpeg' alt='sodasprings' class='mainimages'><img>
+                <div>
+                    <span class='containerText' id='sodaSpringsMotto'> </span><br>
+                    <span class='containerText' id='sodaSpringsYearFounded'>Year founded: </span><br>
+                    <span class='containerText' id='sodaSpringsPopulation'>Population: </span><br>
+                    <span class='containerText' id='sodaSpringsRainFall'>Annual Rain Fall:</span><br>
+                </div>
+            </section>
+            <br>
+            <section class="townContainer" id='fishHavenContainer'>
+                <h2>Fish Haven</h2>
+                <img src='./images/homepage/fishhaven.jpeg' alt='fishhaven' class='mainimages'><img>
+                <div>
+                    <span class='containerText' id='fishHavenMotto'> </span><br>
+                    <span class='containerText' id='fishHavenYearFounded'>Year founded: </span><br>
+                    <span class='containerText' id='fishHavenPopulation'>Population: </span><br>
+                    <span class='containerText' id='fishHavenRainFall'>Annual Rain Fall:</span><br>
+                </div>
+            </section>
+            <br>
+        </div>
+    </main>
+    <footer onload="getCurrentDate()">
+        <h4>Contact:</h4>
+        <p id="telephone">Telephone: 435-650-1192</p>
+        <p>Email: <a href="mailto:tay18008@byui.edu">tay18008@byui.edu</a></p>
+        <p id="terms">Terms of Use</p>
+        <p>&copy; John Taylor - Idaho</p>
+        <p><span id='currentDate'></span></p>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src='scripts/home.js'></script>
+    </footer>
+</body>
+
+</html>

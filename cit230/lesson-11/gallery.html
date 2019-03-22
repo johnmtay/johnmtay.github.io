@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--updated 3/21-->
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Travel Temps</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+</head>
+<body onload="getCurrentDate()">
+    <header>
+        <img src="images/logo.png" alt="logo" class="logo">
+        <div id="motto"><h1>Your first stop for local road conditions</h1></div>
+    </header>
+    <nav>
+        <button onClick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="./preston.html">PRESTON</a></li>
+            <li><a href="./sodasprings.html">SODA SPRINGS</a></li>
+            <li><a href="./fishhaven.html">FISH HAVEN</a></li>
+            <li><a href="./stormcenter.html">STORM CENTER</a></li>
+            <li><a class="active" href="./gallery.html">GALLERY</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Gallery</h1>
+        <section id="photogallery">
+            <div class="gallery" id="autumnwood">
+                <img src="./images/autumnwood.jpeg" alt="autumnwood" class="galleryimages">
+                <div class="desc">Autumn</div>
+            </div>
+            <br>
+            <div class="gallery" id="flowers">
+                <img src="./images/flowers.jpg" alt="flowers" class="galleryimages">
+                <div class="desc">Flowers</div>
+            </div>
+            <br>
+            <div class="gallery" id="rainleaf">
+                <img src="./images/rainleaf.png" alt="rainleaf" class="galleryimages">
+                <div class="desc">Rain Leaf</div>
+            </div>
+            <br>
+            <div class="gallery" id="snowtree">
+                <img src="./images/snowtree.jpg" alt="snowtree" class="galleryimages">
+                <div class="desc">Snow Tree</div>
+            </div>
+            <br>
+            <div class="gallery" id="lake">
+                <img src="./images/lake.jpeg" alt="lake" class="galleryimages">
+                <div class="desc">Lake</div>
+            </div>
+            <br>
+            <div class="gallery" id="purple">
+                <img src="./images/purple.jpeg" alt="purple" class="galleryimages">
+                <div class="desc">Purple Flowers</div>
+            </div>
+            <br>
+        </section>
+        <br>
+    </main>
+    <footer onload="getCurrentDate()">
+        <h4>Contact:</h4>
+        <p id="telephone">Telephone: 435-650-1192</p>
+        <p>Email: <a href= "mailto:tay18008@byui.edu">tay18008@byui.edu</a></p>
+        <p id="terms">Terms of Use</p>
+        <p>&copy; John Taylor - Idaho</p>
+        <p><span id='currentDate'></span></p>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+    </footer>
+</body>
+</html>
