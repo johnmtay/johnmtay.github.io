@@ -13,7 +13,8 @@ iframe {
   border: none;
 }
 
-main section span {
+#thx {
+  display: block;
   font-size: 1.25rem;
   text-align: center;
 }
