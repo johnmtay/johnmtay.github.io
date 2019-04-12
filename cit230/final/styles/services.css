@@ -1,0 +1,127 @@
+/* Styles for pages with information about services -- Weddings and Missionaries */
+article {
+  font-size: 1.25rem;
+  padding-top: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Wedding Page */
+.minigallery {
+  display: grid;
+  grid-gap: 1rem;
+  border: 2rem solid white;
+  justify-content: center;
+  background-color: white;
+}
+
+#venue {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+#bouquet {
+  grid-column: 2;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+#catering {
+  grid-column: 3;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+#planning {
+  display: block;
+  text-align: center;
+}
+
+#packageprice {
+  padding-top: 0;
+  font-size: 5rem;
+  font: bolder;
+}
+
+/* Missionary Page */
+.minigallery {
+  display: grid;
+  grid-gap: 1rem;
+  border: 2rem solid white;
+  justify-content: center;
+  background-color: white;
+}
+
+#seniorcouple1 {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+#seniorsuite {
+  grid-column: 2;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+#seniorcouple2 {
+  grid-column: 3;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+#planning {
+  display: block;
+  text-align: center;
+}
+
+#packageprice {
+  padding-top: 0;
+  font-size: 5rem;
+  font: bolder;
+}
+
+/* WEDDING: For Mobile Displays or displays smaller than 665 px */
+@media only screen and (max-width : 665px) {
+  .minigallery {
+    display: grid;
+    grid-gap: 1rem;
+    border: 2rem solid white;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  #venue {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+  }
+  
+  #bouquet {
+    display: none;
+  }
+  
+  #catering {
+    grid-column: 3;
+    grid-row: 1;
+    max-width: 100%;
+  }
+  
+/* MISSIONARIES: For Mobile Displays or displays smaller than 665 px */
+  #seniorcouple1 {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+  }
+
+  #seniorsuite {
+    grid-column: 2;
+    grid-row: 1;
+    max-width: 100%;
+  }
+
+  #seniorcouple2 {
+    display: none;
+  }
+}

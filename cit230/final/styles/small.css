@@ -157,7 +157,6 @@ article {
 
 article .featured {
   width: 100%;
-  border: 5px solid #a4c9af;
 }
 
 .minigallery {
@@ -277,4 +276,27 @@ article .featured {
     margin-right: 3%;
   }
 
+.minigallery {
+  display: grid;
+  grid-gap: 1rem;
+  border: 2rem solid white;
+  justify-content: center;
+  background-color: white;
+}
+
+#newportchildren {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+#konawalk {
+  grid-column: 2;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+#oquirrhmt {
+  display: none;
+}
 }
