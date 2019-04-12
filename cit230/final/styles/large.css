@@ -1,0 +1,57 @@
+/* For Desktop Displays or displays larger than ## px */
+@media only screen  and (min-width : 1024px) {
+  h1 {
+    font-size: 600%;
+  }
+
+  #description {
+    font-size: 2rem;
+  }
+
+  section {
+    display: grid;
+    grid-gap: 3rem;
+    padding-left: 10%;
+  }
+  #welcome {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  main section div p {
+    grid-column: 1;
+    grid-row: 2;
+    font-family: 'Nunito Sans', sans-serif;
+    justify-content: center;
+  }
+
+  #reservationlink {
+    grid-column: 1;
+    grid-row: 3;
+    font-family: 'Nunito Sans', sans-serif;
+    justify-content: center;
+  }
+
+  #room {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 100%;
+    justify-content: center;
+    min-width: 30rem;
+    padding-top: 4rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  article {
+    margin-left: 1rem;
+  }
+
+  article .featured {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,49 @@
+/* CONTACT FORM PAGE */
+
+#contactform {
+  padding-left: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+iframe {
+  position: unset;
+  width: 100%;
+  margin-right: 5rem;
+  border: none;
+}
+
+main section span {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+#contactform h3 {
+  background-color: #a4c9af;
+  border: none;
+  color: white;
+  padding: .5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+#contactform div {
+  padding-bottom: .5rem;
+}
+
+#contactform form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}

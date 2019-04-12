@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <header></header>
+    <nav>
+        <div id="ul">
+            <div class="li" id="templelink">
+                <a href="./temples.html">Temples</a>
+            </div>
+            <div class="li" id="reservelink">
+                <a href="./reservation.html">Reservations</a>
+            </div>
+            <div class="li" id="logolink">
+                <a href="home.html">
+                    <img src="./images/logoTempleInn.png" alt="logo" id="logo" height="110" />
+                </a>
+            </div>
+            <div class='dropdown' id="servicelink">
+                <button class="dropbtn">Services &nbsp;<i class="arrow down"></i></button>
+                <div class="dropdown-content">
+                    <a href="./wedding.html">Weddings</a>
+                    <a href="./missionary.html">Missionaries</a>
+                </div>
+            </div>
+            <div class="li" id="contactlink">
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <main>
+        <h2 class="pagetitle">Contact Us</h2>
+        <section id="contactform">
+            <span>Phone: 301-555-5555</span>
+            <span>Mailing Address: 4800 Montgomery Ln #300, Bethesda, MD 20814</span>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1555027228582!5m2!1sen!2sus"
+                width="800" height="400" allowfullscreen></iframe>
+                <form action="thanks.html" method="get" id="simpleform">
+                    <h3>Need Additional Information? Let us know!</h3>
+                    <div>
+                        <label for="fullName">Full Name:&nbsp;</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:&nbsp;</label>
+                        <input type="email" id="email" name="email" placeholder="user@domain.com">
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Phone Number:&nbsp;</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="1235554567" required>
+                    </div>
+                    <div>
+                        <label for="addInfo">Your messsage: </label><br>
+                        <textarea id="addInfo" rows="5" cols="33"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div><br>
+                </form>
+        </section><br>
+    </main><br>
+    <footer>
+        <br>
+        <div id="sitemaplinks">
+            <a href="./home.html">Home</a>&nbsp;|
+            <a href="./temples.html">Temples</a>&nbsp;|
+            <a href="./reservation.html">Reservations</a>&nbsp;|
+            <a href="./wedding.html">Weddings</a>&nbsp;|
+            <a href="./missionary.html">Missionaries</a>&nbsp;|
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <p>
+            <a href="https://www.facebook.com/">
+                <img src="images/ic-facebook.png" alt="fbicon" class="socialmedia"></a>
+            <a href="https://www.instagram.com/">
+                <img src="images/ic-instagram.png" alt="instaicon" class="socialmedia"></a>
+            <a href="https://www.twitter.com/"><img src="images/ic-twitter.png" alt="twittericon"
+                    class="socialmedia"></a>
+        </p>
+        <p>&copy; Temple Inn & Suites -
+            <script>
+                document.write(new Date().getFullYear());
+            </script> | 4800 Montgomery Ln #300, Bethesda, MD 20814 | 301-555-5555
+        </p>
+    </footer>
+</body>
+
+</html>

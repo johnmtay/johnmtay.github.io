@@ -1,0 +1,280 @@
+/* General Styles for all Devices */
+body {
+  font-family: 'Scope One', serif;
+  background-color: #F4f4f4;
+
+}
+
+/* General Navigation Rules */
+nav{
+  background-color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.205);
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+nav #ul {
+  padding-inline-start: 0%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/** Dropdown Menu **/
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Dropdown Caret */
+  i {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    vertical-align: 15%;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+  #room {
+    width: 50%;
+  }
+
+/** General Page Contents Rules **/
+h1 {
+  color: #373737;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h2 {
+  color: #373737;
+  font-family: 'Nunito Sans', sans-serif;
+  font: bolder;
+}
+
+#reservationlink {
+  background-color: #373737;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bolder;
+  height: 2rem;
+  width: 8rem;
+}
+
+#reservationlink:hover {
+  background-color: #4d4d4d;
+}
+/** Fixed Footer **/
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  background-color: white;
+  color: black;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.205);
+}
+
+#sitemaplinks a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+.socialmedia {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  width: 25px;
+}
+
+hr {
+  border: 8px solid white;
+}
+
+article h2 {
+  background-color: #a4c9af;
+  border: none;
+  color: white;
+  padding: .5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  height: 2rem;
+  width: 17.5rem;
+}
+article {
+  padding-top: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+article .featured {
+  width: 100%;
+  border: 5px solid #a4c9af;
+}
+
+.minigallery {
+  display: grid;
+  grid-gap: 1rem;
+  border: 2rem solid white;
+  justify-content: center;
+  background-color: white;
+}
+
+#newportchildren {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+#konawalk {
+  grid-column: 2;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+#oquirrhmt {
+  grid-column: 3;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+.pagetitle {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* For Mobile Displays or displays smaller than 665 px */
+@media only screen and (max-width : 665px) {
+  /* Mobile Nav */
+  nav #ul{
+    display: grid;
+  }
+
+  #logolink {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+  }
+
+  #templelink {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #reservelink {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #servicelink {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .dropbtn {
+    padding-left: 0%;
+  }
+
+  #contactlink {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  /* Content */
+  h1 {
+    font-size: 3rem;
+    }
+
+  section {
+    display: grid;
+    grid-gap: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1rem;
+  }
+
+  #welcome {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  main section div p {
+    grid-column: 1;
+    grid-row: 2;
+    font-family: 'Nunito Sans', sans-serif;
+    justify-content: center;
+  }
+
+  #reservationlink {
+    grid-column: 1;
+    grid-row: 3;
+    font-family: 'Nunito Sans', sans-serif;
+    justify-content: center;
+  }
+
+  #room {
+    grid-column: 1;
+    grid-row: 4;
+    width: 100%;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  article {
+    padding-top: 1rem;
+    margin-left: 2%;
+    margin-right: 3%;
+  }
+
+}
