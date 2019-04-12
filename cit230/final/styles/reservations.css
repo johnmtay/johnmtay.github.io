@@ -1,0 +1,59 @@
+/* Styles for Reservations Page */
+
+section {
+  display: grid;
+  margin-left: 10%;
+  padding-left: 0;
+}
+
+#duffelbag {
+  grid-column: 2;
+  grid-row: 2;
+  width: 38rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: left;
+}
+
+label {
+  display: inline-block;
+  width: 15rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+select {
+  width: 12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+option {
+  border: solid 1px #DDDDDD;
+}
+
+textarea {
+  width: 85%;
+}
+/* For Tablet Displays or displays between 768 and 1024 px */
+@media only screen and (min-width : 665px) and (max-width : 1024px) {
+  #duffelbag {
+    width: 25rem;
+  }
+}
+/* For Mobile Displays or displays smaller than 665 px */
+@media only screen and (max-width : 665px) {
+  #duffelbag {
+    display: none;
+  }
+}

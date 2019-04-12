@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,53 +12,154 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/reservations.css">
 </head>
+
 <body>
     <header></header>
     <nav>
         <div id="ul">
-            <div class="li"  id="templelink">
+            <div class="li" id="templelink">
                 <a href="./temples.html">Temples</a>
             </div>
             <div class="li" id="reservelink">
-                <a href="./reservation.html" >Reservations</a>
+                <a href="./reservation.html">Reservations</a>
             </div>
             <div class="li" id="logolink">
                 <a href="home.html">
                     <img src="./images/logoTempleInn.png" alt="logo" id="logo" height="110" />
                 </a>
-            </div class="li">
+            </div>
             <div class='dropdown' id="servicelink">
                 <button class="dropbtn">Services &nbsp;<i class="arrow down"></i></button>
                 <div class="dropdown-content">
-                <a href="./wedding.html">Weddings</a>
-                <a href="./missionary.html">Missionaries</a>
+                    <a href="./wedding.html">Weddings</a>
+                    <a href="./missionary.html">Missionaries</a>
                 </div>
             </div>
             <div class="li" id="contactlink">
-                <a href="./contact.html" >Contact</a>
+                <a href="./contact.html">Contact</a>
             </div>
         </div>
     </nav>
     <br>
     <main>
+        <h2 class="pagetitle">Reservations</h2>
         <section>
-        <h1 id="Welcome"> Welcome Home</h1>
-        <span id="description">Temple Inn & Suites offers specialized services for traveling temple patrons, wedding attendees, and more! </span>
-        <a href="./reservation.html" id='reservationlink'>Book Now!</a><br>
-        <img src="./images/room.jpg" alt="room" id="room"><br>
-        </section><br>
-        <div class="minigallery">
-            <img src="./images/newportchildren.jpg" alt="newport" id="newportchildren">
-            <img src="./images/konawalk.jpg" alt="kona" id="konawalk">
-            <img src="./images/oquirrhmt.jpg" alt="oquirrhmountain" id="oquirrhmt">
-        </div>
-        <article>
-            <h2>Featured Temple Location</h2>
-            <h3>Gilbert, Arizona</h3>
-            <p>Announced in Spring of 2008 and dedicated in March of 2014, the Gilbert, Arizona Temple currently serves latter-day saints from 26 different stakes located in Gilbert and surrounding areas. This is the fourth temple to have been built in Arizona. </p>
-            <img src='./images/gilbert.jpg' alt='gilbert' class='featured'><br><br>
-        </article>
+            <h3>Please fill out the following form to begin your reservation. All required fields are marked with an
+                    asterisk (*).</h3>
+            <form action="thanks.html" method="get">
+                <div>
+                    <label for="fullName">Full Name:*&nbsp;</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                </div>
+                <div>
+                    <label for="address">Street Address:*&nbsp;</label>
+                    <input type="text" id="address" name="address" placeholder="123 River Road" required>
+                </div>
+                <div>
+                    <label for="city">City:*&nbsp;</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div>
+                    <label for="state">State/Province:&nbsp;</label>
+                    <input type="text" id="state" name="state">
+                </div>
+                <div>
+                    <label for="country">Country:&nbsp;</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+                <div>
+                    <label for="zipCode">Zip Code:&nbsp;</label>
+                    <input type="number" id="zipCode" name="zipCode" placeholder="12345">
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone Number:* &nbsp;</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="1235554567" required>
+                </div>
+                <div>
+                    <label for="email">Email:*&nbsp;</label>
+                    <input type="email" id="email" name="email" placeholder="user@domain.com" required>
+                </div>
+                <div>
+                    <label for="location">Visiting Location:*&nbsp;</label>
+                    <select name="location" id="location" required>
+                        <option value>Please Select</option>
+                        <option value="Gilbert, Arizona">Gilbert, Arizona</option>
+                        <option value="Kona, Hawaii">Kona, Hawaii</option>
+                        <option value="Newport Beach, California">Newport Beach, California</option>
+                        <option value="Oquirrh Mountain, Utah">Oquirrh Mountain, Utah
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="roomRequest">Room Request:* &nbsp;</label>
+                    <select name="roomRequest" id="roomRequest" required>
+                        <option value>Please Select</option>
+                        <option value="Basic Room">Basic Room - 1 Queen Bed - $119/night</option>
+                        <option value="Luxe Room">Luxe Room - 1 King Bed - $149/night</option>
+                        <option value="Family Room">Family Room - 2 Queen Beds - $189/night</option>
+                        <option value="Deluxe Family Room">Deluxe Family Room - 2 Queen Beds, Couch-bed - $199/night
+                        </option>
+                        <option value="Family Suite">Family Suite - 2 Bed, 2 Bath, Kitchenette, 2 Queen Beds, Couch-bed
+                            - $249/night
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="checkinDate">Check-in:* &nbsp;</label>
+                    <input type="date" id="checkinDate" name="checkinDate" min='2019-01-01'
+                        required>
+                </div>
+                <script>var today = new Date();
+                    var dd = today.getDate();
+                    var mm = today.getMonth() + 1; //January is 0!
+                    var yyyy = today.getFullYear();
+                    if (dd < 10) {
+                        dd = '0' + dd
+                    }
+                    if (mm < 10) {
+                        mm = '0' + mm
+                    }
+
+                    today = yyyy + '-' + mm + '-' + dd;
+                    document.getElementById("checkinDate").setAttribute("min", today);
+                </script>
+                <div>
+                    <label for="checkoutDate">Check-out:* &nbsp;</label>
+                    <input type="date" id="checkoutDate" name="checkoutDate" required>
+                </div>
+                <script>var today = new Date();
+                    var dd = today.getDate();
+                    var mm = today.getMonth() + 1; //January is 0!
+                    var yyyy = today.getFullYear();
+                    if (dd < 10) {
+                        dd = '0' + dd
+                    }
+                    if (mm < 10) {
+                        mm = '0' + mm
+                    }
+
+                    today = yyyy + '-' + mm + '-' + dd;
+                    document.getElementById("checkoutDate").setAttribute("min", today);
+                </script>
+                <div>
+                    <label for="wheelchair" >Wheelchair accessibility?</label><br>
+                    <input type="radio" name="wheelchair" id="wheelchair1" value="No">&nbsp;No &nbsp;
+                    <input type="radio" name="wheelchair" id="wheelchair" value="Yes">&nbsp;Yes
+                    &nbsp;
+                </div>
+                <div>
+                    <label for="addInfo">Additional accomodations or comments: </label><br>
+                    <textarea rows="5" cols="30"  id="addInfo"></textarea>
+                </div>
+                <div><br>
+                    <input type="submit" value="Submit"><br><br><br>
+                </div><br>
+            </form>
+            <img src="./images/duffelbag.jpg" alt="duffelbag" id="duffelbag">
+            <br><br>
+        </section>
     </main>
     <footer>
         <br>
@@ -74,12 +176,15 @@
                 <img src="images/ic-facebook.png" alt="fbicon" class="socialmedia"></a>
             <a href="https://www.instagram.com/">
                 <img src="images/ic-instagram.png" alt="instaicon" class="socialmedia"></a>
-            <a href="https://www.twitter.com/"><img src="images/ic-twitter.png" alt="twittericon" class="socialmedia"></a>
+            <a href="https://www.twitter.com/"><img src="images/ic-twitter.png" alt="twittericon"
+                    class="socialmedia"></a>
         </p>
-        <p>&copy; Temple Inn & Suites - <script>
-            document.write(new Date().getFullYear());
+        <p>&copy; Temple Inn & Suites -
+            <script>
+                document.write(new Date().getFullYear());
             </script> | 4800 Montgomery Ln #300, Bethesda, MD 20814 | 301-555-5555
         </p>
     </footer>
 </body>
+
 </html>
