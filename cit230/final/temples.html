@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,52 +13,85 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
+
 <body>
     <header></header>
     <nav>
         <div id="ul">
-            <div class="li"  id="templelink">
+            <div class="li" id="templelink">
                 <a href="./temples.html">Temples</a>
             </div>
             <div class="li" id="reservelink">
-                <a href="./reservation.html" >Reservations</a>
+                <a href="./reservation.html">Reservations</a>
             </div>
             <div class="li" id="logolink">
                 <a href="home.html">
                     <img src="./images/logoTempleInn.png" alt="logo" id="logo" height="110" />
                 </a>
-            </div class="li">
+            </div>
             <div class='dropdown' id="servicelink">
                 <button class="dropbtn">Services &nbsp;<i class="arrow down"></i></button>
                 <div class="dropdown-content">
-                <a href="./wedding.html">Weddings</a>
-                <a href="./missionary.html">Missionaries</a>
+                    <a href="./wedding.html">Weddings</a>
+                    <a href="./missionary.html">Missionaries</a>
                 </div>
             </div>
             <div class="li" id="contactlink">
-                <a href="./contact.html" >Contact</a>
+                <a href="./contact.html">Contact</a>
             </div>
         </div>
     </nav>
     <br>
     <main>
         <section>
-        <h1 id="Welcome"> Welcome Home</h1>
-        <span id="description">Temple Inn & Suites offers specialized services for traveling temple patrons, wedding attendees, and more! </span>
-        <a href="./reservation.html" id='reservationlink'>Book Now!</a><br>
-        <img src="./images/room.jpg" alt="room" id="room"><br>
-        </section><br>
-        <div class="minigallery">
-            <img src="./images/newportchildren.jpg" alt="newport" id="newportchildren">
-            <img src="./images/konawalk.jpg" alt="kona" id="konawalk">
-            <img src="./images/oquirrhmt.jpg" alt="oquirrhmountain" id="oquirrhmt">
-        </div>
-        <article>
-            <h2>Featured Temple Location</h2>
-            <h3>Gilbert, Arizona</h3>
-            <p>Announced in Spring of 2008 and dedicated in March of 2014, the Gilbert, Arizona Temple currently serves latter-day saints from 26 different stakes located in Gilbert and surrounding areas. This is the fourth temple to have been built in Arizona. </p>
-            <img src='./images/gilbert.jpg' alt='gilbert' class='featured'><br><br>
-        </article>
+            <div class="templeContainer" id="gilbertContainer">
+                <h2>Gilbert Arizona Temple</h2>
+                <img src='./images/gilbert.jpg' alt='gilbert' class='mainimages'></img>
+                <div>
+                    <span class='containerText' id='gilbertAddress'>Address: </span><br>
+                    <span class='containerText' id='gilbertPhone'>Phone: </span><br>
+                    <span class='containerText' id='gilbertDedication'>Dedication:</span><br>
+                    <span class='containerText' id='gilbertServices'>Services:</span><br>
+                    <span class='containerText' id='gilbertClosures'>Closures:</span><br>
+                </div>
+            </div>
+            <br>
+            <div class="templeContainer" id='konaContainer'>
+                <h2>Kona Hawaii Temple</h2>
+                <img src='./images/kona.jpg' alt='kona' class='mainimages'><img>
+                <div>
+                    <span class='containerText' id='konaAddress'>Address: </span><br>
+                    <span class='containerText' id='konaPhone'>Phone: </span><br>
+                    <span class='containerText' id='konaDedication'>Dedication:</span><br>
+                    <span class='containerText' id='konaServices'>Services:</span><br>
+                    <span class='containerText' id='konaClosures'>Closures:</span><br>
+                </div>
+            </div>
+            <br>
+            <div class="templeContainer" id='newportContainer'>
+                <h2>Newport Beach California Temple</h2>
+                <img src='./images/newportbeach.jpg' alt='newport' class='mainimages'><img>
+                <div>
+                    <span class='containerText' id='newportAddress'>Address: </span><br>
+                    <span class='containerText' id='newportPhone'>Phone: </span><br>
+                    <span class='containerText' id='newportDedication'>Dedication:</span><br>
+                    <span class='containerText' id='newportServices'>Services:</span><br>
+                    <span class='containerText' id='newportClosures'>Closures:</span><br>
+                </div>
+            </div>
+            <br>
+            <div class="templeContainer" id='oquirrhContainer'>
+                <h2>Oquirrh Mountain Utah Temple</h2>
+                <img src='./images/oquirrhmountain.jpg' alt='oquirrhmountain' class='mainimages'><img>
+                <div>
+                    <span class='containerText' id='oquirrhAddress'>Address: </span><br>
+                    <span class='containerText' id='oquirrhPhone'>Phone: </span><br>
+                    <span class='containerText' id='oquirrhDedication'>Dedication:</span><br>
+                    <span class='containerText' id='oquirrhServices'>Services:</span><br>
+                    <span class='containerText' id='oquirrhClosures'>Closures:</span><br>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <br>
@@ -74,12 +108,16 @@
                 <img src="images/ic-facebook.png" alt="fbicon" class="socialmedia"></a>
             <a href="https://www.instagram.com/">
                 <img src="images/ic-instagram.png" alt="instaicon" class="socialmedia"></a>
-            <a href="https://www.twitter.com/"><img src="images/ic-twitter.png" alt="twittericon" class="socialmedia"></a>
+            <a href="https://www.twitter.com/"><img src="images/ic-twitter.png" alt="twittericon"
+                    class="socialmedia"></a>
         </p>
-        <p>&copy; Temple Inn & Suites - <script>
-            document.write(new Date().getFullYear());
+        <p>&copy; Temple Inn & Suites -
+            <script src='scripts/temples.js'></script>
+            <script>
+                document.write(new Date().getFullYear());
             </script> | 4800 Montgomery Ln #300, Bethesda, MD 20814 | 301-555-5555
         </p>
     </footer>
 </body>
+
 </html>
