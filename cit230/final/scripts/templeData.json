@@ -1,0 +1,84 @@
+{
+    "temples": [
+        {
+            "name": "Gilbert Arizona Temple",
+            "address": "3301 S Greenfield Rd Gilbert, Arizona  85297",
+            "phone": "(+1) 480-822-5000",
+            "dedication": "2 March 2014",
+            "services": [
+                "Clothing rental",
+                "No cafeteria available",
+                "Distribution Center Nearby"
+            ],
+            "closures": [
+                "Thursday, 4 July 2019",
+                "Monday, 30 September 2019 - Monday, 14 October 2019",
+                "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019"
+            ]
+        },
+        {
+            "name": "Kona Hawaii Temple",
+            "address": "75-230 Kalani St Kailua-Kona HI 96740",
+            "phone": "(+1) 808-331-8504",
+            "dedication": "23–24 January 2000",
+            "services": [
+                "No clothing rental available",
+                "No cafeteria available"
+            ],
+            "closures": [
+                "Monday, 8 April 2019 - Monday, 22 April 2019",
+                "Thursday, 4 July 2019",
+                "Monday, 23 September 2019 - Monday, 7 October 2019",
+                "Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019",
+                "Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019"
+            ]
+        },
+        {
+            "name": "Newport Beach California Temple",
+            "address": "2300 Bonita Canyon Dr Newport Beach CA 92660",
+            "phone": "(1) 949-644-1820" ,
+            "dedication": "28 August 2005",
+            "services": [
+                "No clothing rental available",
+                "No cafeteria available"
+            ],
+            "closures": [
+                "Monday, 27 May 2019 (Limited Hours)",
+                "Thursday, 4 July 2019",
+                "Monday, 15 July 2019 - Monday, 29 July 2019",
+                "Monday, 2 September 2019 (Limited Hours)",
+                "Saturday, 5 October 2019",
+                "Wednesday, 27 November 2019",
+                "Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019",
+                "Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019"
+            ]
+        },
+        {
+            "name": "Oquirrh Mountain Utah Temple",
+            "address": "11022 S 4000 W South Jordan UT 84009",
+            "phone": "(1) 801-878-3800",
+            "dedication": "21–23 August 2009",
+            "services": [
+                "No clothing rental available",
+                "No cafeteria available",
+                "Distribution Center Nearby"
+            ],
+            "closures": [
+                "Thursday, 4 July 2019",
+                "Wednesday, 24 July 2019",
+                "Monday, 9 September 2019 - Monday, 23 September 2019",
+                "Saturday, 5 October 2019",
+                "Wednesday, 27 November 2019 (Limited Hours)",
+                "Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019"
+            ]
+        }
+    ]
+}
