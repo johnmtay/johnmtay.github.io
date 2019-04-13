@@ -1,4 +1,4 @@
-/* For Tablet Displays or displays between 768 and 1024 px */
+/* For Tablet Displays or displays between 665 and 1024 px */
 @media only screen and (min-width : 665px) and (max-width : 1024px) {
     h1 {
     font-size: 4rem;
